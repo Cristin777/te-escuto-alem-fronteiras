@@ -8,13 +8,13 @@
       body {
         margin: 0;
         font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #fafafa, #e9f0ff);
+        background: linear-gradient(to right, #f5f5f5, #e0f7fa);
         display: flex;
         flex-direction: column;
         align-items: center;
-        justify-content: center;
+        justify-content: flex-start;
         min-height: 100vh;
-        padding: 40px;
+        padding: 30px 20px;
         text-align: center;
       }
 
@@ -25,22 +25,21 @@
       }
 
       h2 {
-        font-size: 1.5rem;
+        font-size: 1.4rem;
         color: #3949ab;
-        margin-bottom: 40px;
+        margin-bottom: 30px;
       }
 
       .link-button {
         background-color: #1a237e;
         color: white;
-        padding: 14px 28px;
+        padding: 12px 24px;
         border: none;
-        border-radius: 8px;
+        border-radius: 6px;
         font-size: 1.1rem;
         cursor: pointer;
         text-decoration: none;
         margin-bottom: 40px;
-        transition: background 0.3s;
       }
 
       .link-button:hover {
@@ -50,18 +49,29 @@
       .pagamentos {
         display: flex;
         flex-direction: column;
-        gap: 20px;
         align-items: center;
+        gap: 30px;
+        max-width: 400px;
+        width: 100%;
+      }
+
+      .bloco {
+        background-color: #ffffff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+        width: 100%;
       }
 
       .pix-button {
         background-color: #00838f;
+        color: white;
         padding: 12px 24px;
         border: none;
         border-radius: 6px;
-        color: white;
         font-size: 1rem;
         cursor: pointer;
+        margin-top: 10px;
       }
 
       .pix-button:hover {
@@ -79,11 +89,7 @@
           font-size: 1.8rem;
         }
         h2 {
-          font-size: 1.2rem;
-        }
-        .link-button {
-          font-size: 1rem;
-          padding: 10px 20px;
+          font-size: 1.1rem;
         }
       }
     </style>
@@ -99,11 +105,22 @@
     </a>
 
     <div class="pagamentos">
-      <div id="paypal-container-VKBFJ4FJUCQXL"></div>
-      <div id="paypal-container-9RVPQ72664CDC"></div>
-      <button class="pix-button" onclick="window.location.href='https://nubank.com.br/pagar/1o8ng/tNiEc4XDrT'">
-        Pagar com Pix: cristin.rocha7@gmail.com
-      </button>
+      <div class="bloco">
+        <h3>Acesso 24h – R$30,00</h3>
+        <div id="paypal-container-VKBFJ4FJUCQXL"></div>
+      </div>
+
+      <div class="bloco">
+        <h3>Plano Mensal – R$127,00</h3>
+        <div id="paypal-container-9RVPQ72664CDC"></div>
+      </div>
+
+      <div class="bloco">
+        <h3>Ou contribua com Pix</h3>
+        <button class="pix-button" onclick="window.location.href='https://nubank.com.br/pagar/1o8ng/tNiEc4XDrT'">
+          cristin.rocha7@gmail.com
+        </button>
+      </div>
     </div>
 
     <script>
