@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Te Escuto - Além Fronteiras</title>
+    <style>
+      body {
+        margin: 0;
+        font-family: Arial, sans-serif;
+        background: linear-gradient(to right, #fafafa, #e9f0ff);
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        padding: 40px;
+        text-align: center;
+      }
+
+      h1 {
+        font-size: 2.5rem;
+        color: #1a237e;
+        margin-bottom: 10px;
+      }
+
+      h2 {
+        font-size: 1.5rem;
+        color: #3949ab;
+        margin-bottom: 40px;
+      }
+
+      .link-button {
+        background-color: #1a237e;
+        color: white;
+        padding: 14px 28px;
+        border: none;
+        border-radius: 8px;
+        font-size: 1.1rem;
+        cursor: pointer;
+        text-decoration: none;
+        margin-bottom: 40px;
+        transition: background 0.3s;
+      }
+
+      .link-button:hover {
+        background-color: #0d155f;
+      }
+
+      .pagamentos {
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+      }
+
+      .pix-button {
+        background-color: #00838f;
+        padding: 12px 24px;
+        border: none;
+        border-radius: 6px;
+        color: white;
+        font-size: 1rem;
+        cursor: pointer;
+      }
+
+      .pix-button:hover {
+        background-color: #00575e;
+      }
+
+      footer {
+        margin-top: 50px;
+        font-size: 0.9rem;
+        color: #555;
+      }
+
+      @media (max-width: 600px) {
+        h1 {
+          font-size: 1.8rem;
+        }
+        h2 {
+          font-size: 1.2rem;
+        }
+        .link-button {
+          font-size: 1rem;
+          padding: 10px 20px;
+        }
+      }
+    </style>
+    <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
+  </head>
+
+  <body>
+    <h1>Te Escuto - Além Fronteiras</h1>
+    <h2>Uma escuta integrativa para sua dor emocional</h2>
+
+    <a href="https://chatgpt.com/g/g-683718b62dc88191bf44c0ec49c10486-te-escuto" target="_blank" class="link-button">
+      Acessar agora a IA Te Escuto
+    </a>
+
+    <div class="pagamentos">
+      <div id="paypal-container-VKBFJ4FJUCQXL"></div>
+      <div id="paypal-container-9RVPQ72664CDC"></div>
+      <button class="pix-button" onclick="window.location.href='https://nubank.com.br/pagar/1o8ng/tNiEc4XDrT'">
+        Pagar com Pix: cristin.rocha7@gmail.com
+      </button>
+    </div>
+
+    <script>
+      paypal.HostedButtons({
+        hostedButtonId: "VKBFJ4FJUCQXL",
+      }).render("#paypal-container-VKBFJ4FJUCQXL");
+
+      paypal.HostedButtons({
+        hostedButtonId: "9RVPQ72664CDC",
+      }).render("#paypal-container-9RVPQ72664CDC");
+    </script>
+
+    <footer>
+      Criado por Maria Cristina Rocha Garcia • 2025
+    </footer>
+  </body>
+</html>
