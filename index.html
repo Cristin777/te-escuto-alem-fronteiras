@@ -1,140 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Te Escuto - Além Fronteiras</title>
-    <style>
-      body {
-        margin: 0;
-        font-family: Arial, sans-serif;
-        background: linear-gradient(to right, #f5f5f5, #e0f7fa);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        justify-content: flex-start;
-        min-height: 100vh;
-        padding: 30px 20px;
-        text-align: center;
-      }
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Te Escuto - Além Fronteiras</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background-color: #0e0e0e;
+      color: #f9f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      min-height: 100vh;
+      text-align: center;
+    }
 
-      h1 {
-        font-size: 2.5rem;
-        color: #1a237e;
-        margin-bottom: 10px;
-      }
+    header {
+      padding: 40px 20px 10px;
+    }
 
-      h2 {
-        font-size: 1.4rem;
-        color: #3949ab;
-        margin-bottom: 30px;
-      }
+    h1 {
+      font-size: 2.6em;
+      color: #82b1ff;
+      margin-bottom: 0.2em;
+    }
 
-      .link-button {
-        background-color: #1a237e;
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 6px;
-        font-size: 1.1rem;
-        cursor: pointer;
-        text-decoration: none;
-        margin-bottom: 40px;
-      }
+    p {
+      font-size: 1.2em;
+      color: #ccc;
+      margin-bottom: 40px;
+    }
 
-      .link-button:hover {
-        background-color: #0d155f;
-      }
+    .pagamentos {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      gap: 20px;
+      max-width: 1000px;
+    }
 
-      .pagamentos {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        gap: 30px;
-        max-width: 400px;
-        width: 100%;
-      }
+    .bloco {
+      background-color: #1f1f1f;
+      border-radius: 12px;
+      padding: 20px;
+      width: 250px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.3);
+    }
 
-      .bloco {
-        background-color: #ffffff;
-        padding: 20px;
-        border-radius: 12px;
-        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-        width: 100%;
-      }
+    .pix-button {
+      background-color: #00838f;
+      color: white;
+      padding: 12px 24px;
+      border: none;
+      border-radius: 6px;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-top: 10px;
+    }
 
-      .pix-button {
-        background-color: #00838f;
-        color: white;
-        padding: 12px 24px;
-        border: none;
-        border-radius: 6px;
-        font-size: 1rem;
-        cursor: pointer;
-        margin-top: 10px;
-      }
+    .pix-button:hover {
+      background-color: #00575e;
+    }
 
-      .pix-button:hover {
-        background-color: #00575e;
-      }
+    footer {
+      margin-top: 50px;
+      font-size: 0.9em;
+      color: #888;
+    }
+  </style>
+  <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
+</head>
 
-      footer {
-        margin-top: 50px;
-        font-size: 0.9rem;
-        color: #555;
-      }
-
-      @media (max-width: 600px) {
-        h1 {
-          font-size: 1.8rem;
-        }
-        h2 {
-          font-size: 1.1rem;
-        }
-      }
-    </style>
-    <script src="https://www.paypal.com/sdk/js?client-id=BAAaVkUxaVBs6tRyAIsC5SzH1jhrwK-GialFVALkLGvy6BVhXUENAbFKPsHsU23Sj2bs_PxNIzZ5IzAYCw&components=hosted-buttons&disable-funding=venmo&currency=BRL"></script>
-  </head>
-
-  <body>
+<body>
+  <header>
     <h1>Te Escuto - Além Fronteiras</h1>
-    <h2>Uma escuta integrativa para sua dor emocional</h2>
+    <p>Conexão emocional e escuta terapêutica com acesso 24h</p>
+  </header>
 
-    <a href="https://chatgpt.com/g/g-683718b62dc88191bf44c0ec49c10486-te-escuto" target="_blank" class="link-button">
-      Acessar agora a IA Te Escuto
-    </a>
-
-    <div class="pagamentos">
-      <div class="bloco">
-        <h3>Acesso 24h – R$30,00</h3>
-        <div id="paypal-container-VKBFJ4FJUCQXL"></div>
-      </div>
-
-      <div class="bloco">
-        <h3>Plano Mensal – R$127,00</h3>
-        <div id="paypal-container-9RVPQ72664CDC"></div>
-      </div>
-
-      <div class="bloco">
-        <h3>Ou contribua com Pix</h3>
-        <button class="pix-button" onclick="window.location.href='https://nubank.com.br/pagar/1o8ng/tNiEc4XDrT'">
-          cristin.rocha7@gmail.com
-        </button>
-      </div>
+  <div class="pagamentos">
+    <div class="bloco">
+      <h2>Acesso 24h – R$30,00</h2>
+      <div id="paypal-container-VKBFJ4FJUCQXL"></div>
     </div>
 
-    <script>
-      paypal.HostedButtons({
-        hostedButtonId: "VKBFJ4FJUCQXL",
-      }).render("#paypal-container-VKBFJ4FJUCQXL");
+    <div class="bloco">
+      <h2>Plano Mensal – R$127,00</h2>
+      <div id="paypal-container-9RVPQ72664CDC"></div>
+    </div>
 
-      paypal.HostedButtons({
-        hostedButtonId: "9RVPQ72664CDC",
-      }).render("#paypal-container-9RVPQ72664CDC");
-    </script>
+    <div class="bloco">
+      <h2>Contribuir com Pix</h2>
+      <button class="pix-button" onclick="window.location.href='https://nubank.com.br/pagar/1o8ng/tNiEc4XDrT'">
+        cristin.rocha7@gmail.com
+      </button>
+    </div>
+  </div>
 
-    <footer>
-      Criado por Maria Cristina Rocha Garcia • 2025
-    </footer>
-  </body>
+  <script>
+    paypal.HostedButtons({
+      hostedButtonId: "VKBFJ4FJUCQXL",
+    }).render("#paypal-container-VKBFJ4FJUCQXL");
+
+    paypal.HostedButtons({
+      hostedButtonId: "9RVPQ72664CDC",
+    }).render("#paypal-container-9RVPQ72664CDC");
+  </script>
+
+  <footer>
+    Criado por Maria Cristina Rocha Garcia • 2025
+  </footer>
+</body>
 </html>
